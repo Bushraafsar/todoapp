@@ -1,5 +1,5 @@
 html{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 body{
     background-image: url("bg5.jpg");
