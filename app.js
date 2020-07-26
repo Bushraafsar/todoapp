@@ -12,7 +12,8 @@ function addtodo(){
     editbtn.setAttribute("class","btn");
     editbtn.setAttribute("onclick","onEdit(this)");
     li.appendChild(editbtn);
-    lst.appendChild(li);
+    if(item===""){ alert("Please be filled this field! ")}
+    else{lst.appendChild(li);}
     
     todoitem.value="";
     console.log(li)
