@@ -13,8 +13,6 @@ function addtodo(){
     editbtn.setAttribute("class","btn");
     editbtn.setAttribute("onclick","onEdit(this)");
     li.appendChild(editbtn);
-    if(item===""){ alert("Please be filled this field! ")}
-    else{lst.appendChild(li);}
     
     todoitem.value="";
     console.log(li)
@@ -24,9 +22,16 @@ function addtodo(){
     delbtn.setAttribute("class","btnn");
     delbtn.setAttribute("onclick","onDelete(this)");
     li.appendChild(delbtn);
-    lst.appendChild(li);
+ 
     todoitem.value="";
     console.log(li)
+    if(item===""){
+        alert("Please be filled this field! ")}
+    else{
+        lst.appendChild(li);}
+    
+    
+    
     
 
 
