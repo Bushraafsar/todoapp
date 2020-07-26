@@ -3,8 +3,9 @@ function addtodo(){
     var item=document.getElementById("todoitem").value;
     var li=document.createElement("li");
     var litext=document.createTextNode(item);
- 
-    li.appendChild(litext);
+    if(item===""){alert("please be filled this field ")}
+    else{
+    li.appendChild(litext);}
     
     var editbtn =document.createElement("button");
     var edittext =document.createTextNode("Edit");
